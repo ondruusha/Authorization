@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Вход на сайт</h1>
+			<input type="login" placeholder="Логин" />
+			<input type="password" placeholder="Пароль" />
+            <button>Войти на сайт</button>
+            <a target="_blank" href=""></a>
+			<a href="#">Забыли пароль?</a>
+			<button>Зарегистрироваться</button>
+
+		</form>
+	</div>
+
+    <script type="text/javascript"> // Условие, написанное на JavaScript
+        function Input() { // Функция для ввода логина и пароля
+            login_ok = false;
+            user_name = "";
+            password = "";
+            user_name = prompt("Логин", ""); // Ввод логина
+            user_name = user_name.toLowerCase(); // Перевод логина в нижний регистр
+            password = prompt("Пароль", ""); // Ввод паспорта
+            password = password.toLowerCase(); // Перевод пароля в нижний регистр
+            if (user_name == "login" && password == "pass") { // Если юзернейм = login, пассворд = pass, то все ок, юзера перекинет на сайт техникума
+                login_ok = true;
+                window.location = "https://sdo.ket44.ru";
+            }
+            if (user_name == "login2" && password == "pass2") { // Если юзернейм = login2, пассворд = pass2, то все ок, юзера перекинет на сайт техникума
+                login_ok = true;
+                window.location = "https://sdo.ket44.ru";
+            }
+            if (login_ok == false) alert("Неверный логин или пароль!"); // Если юзер вводит неверные данные для входа, то он получит сообщение,
+            // "Неверный логин или пароль!"
+        }
+    </script>
+
+    <!--p>
+        осталось:
+    1. реализовать меню через while, switch
+    2. хранение лога и пассворда в файле
+    3. если не совпадает с данными в файле, то выдать ошибку (практически есть в коде)
+    4. шифрование данных в файле
+    5. регистрация юзера
+    </p-->
+</body>
+
+</html>
