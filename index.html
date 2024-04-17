@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторизация</title>
 </head>
-<script>
-    function checkCredentials() {
-        var login = document.querySelector('input[type="login"]').value;
-        var password = document.querySelector('input[type="password"]').value;
-        if (login === 'login' && password === 'password') {
-            window.location.href = 'https://sdo.ket44.ru';
-        } else {
-            alert('Неверный логин или пароль. Попробуйте еще раз.');
+<body>
+    <script>
+        function checkCredentials() {
+            var login = document.querySelector('input[type="login"]').value;
+            var password = document.querySelector('input[type="password"]').value;
+            if (login === 'login' && password === 'password') {
+                window.location.href = 'https://sdo.ket44.ru';
+            } else {
+                alert('Неверный логин или пароль. Попробуйте еще раз.');
+            }
         }
-    }
-    function Proverka() {
-        if (login === 'login' && password === 'password') {
+        function Proverka() {
+            if (login === 'login' && password === 'password') {
+            }
+            console.log('Вход произведен успешно!')
         }
-        console.log('Вход произведен успешно!')
-    }
-</script>
-<div class="form-container sign-in-container">
-    <form>
-        <h1>Вход на сайт</h1>
-        <input type="login" placeholder="Логин" />
-        <input type="password" placeholder="Пароль" />
-        <button type="button" onclick="checkCredentials()">Войти на сайт</button>
-        <a target="_blank" href=""></a>
-        <button>Зарегистрироваться</button>
-    </form>
-</div>
-<style>
-    button {
-        background-color: #FF4500;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
-</style>
+    </script>
+    <div class="form-container sign-in-container">
+        <form>
+            <h1>Вход на сайт</h1>
+            <input type="login" placeholder="Логин" />
+            <input type="password" placeholder="Пароль" />
+            <button type="button" onclick="checkCredentials()">Войти на сайт</button>
+            <script>Proverka</script>
+            <a target="_blank" href=""></a>
+            <button>Зарегистрироваться</button>
+        </form>
+    </div>
+    <style>
+        button {
+            background-color: #FF4500;
+            border: none;
+            color: white;
+            padding: 20px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>
