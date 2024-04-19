@@ -1,27 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторизация</title>
 </head>
+
 <body>
-    <script>
-        function checkCredentials() {
-            var login = document.querySelector('input[type="login"]').value;
-            var password = document.querySelector('input[type="password"]').value;
-            if (login === 'login' && password === 'password') {
-                window.location.href = 'https://sdo.ket44.ru';
-            } else {
-                alert('Неверный логин или пароль. Попробуйте еще раз.');
-            }
-        }
-        function Proverka() {
-            if (login === 'login' && password === 'password') {
-            }
-            console.log('Вход произведен успешно!')
-        }
-    </script>
+    <script src="data.js"></script>
     <div class="form-container sign-in-container">
         <form>
             <h1>Вход на сайт</h1>
@@ -30,14 +17,14 @@
             <button type="button" onclick="checkCredentials()">Войти на сайт</button>
             <script>Proverka</script>
             <a target="_blank" href=""></a>
-            <button>Зарегистрироваться</button>
+            <button type="button" onclick="registr()">Регистрация</button>
         </form>
     </div>
     <style>
         button {
-            background-color: #ff6cb1;
+            background-color: #6cc4ff;
             border: none;
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 20px 34px;
             text-align: center;
             text-decoration: none;
@@ -48,4 +35,5 @@
         }
     </style>
 </body>
+
 </html>
