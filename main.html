@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Автодилерская компания</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .login-button {
+            background-color: #007bff;
+        }
+        .register-button {
+            background-color: #6c757d;
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="login.html" class="button login-button">Вход</a>
+        <a href="register.html" class="button register-button">Регистрация</a>
+    </header>
+    <!-- Остальной контент страницы -->
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автодилерская компания</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #e9ecef;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Автодилерская компания</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="cars.html">Автомобили</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Добро пожаловать на сайт автодилерской компании!</h2>
+        <p>Здесь вы можете найти широкий выбор новых и б/у автомобилей.</p>
+    </main>
+    <footer>
+        <p>© 2022 Автодилерская компания</p>
+    </footer>
 </body>
 </html>
