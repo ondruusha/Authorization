@@ -17,11 +17,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #e7e7e7;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #e2e2e2;
+    color: rgb(173, 14, 14);
 }
 
 .header ul {
@@ -33,6 +30,7 @@ body {
 
 .header ul li {
     margin-right: 10px;
+    padding: 5px 10px;
 }
 
 .header ul li:last-child {
@@ -41,29 +39,39 @@ body {
 
 .header a {
     text-decoration: none;
-    color: #333;
+    color: #2b2b2b;
 }
 
 .button {
-    padding: 10px 15px;
+    background-color: #4CAF50;
     border: none;
-    border-radius: 5px;
     color: white;
-    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
 }
 
 .login-button {
-    background-color: #caa45d;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #a8a02f;
 }
 
 .register-button {
-    background-color: #6c757d;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ba0000;
 }
 
 h2 {
     color: black;
-    text-align: left; /* Выравниваем текст по левому краю */
+    text-align: left;
 }
 
 main {
@@ -71,7 +79,7 @@ main {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Выравниваем по вертикали */
+    justify-content: center;
 }
 
 footer {
@@ -81,12 +89,33 @@ footer {
     border-top: 1px solid #e7e7e7;
 }
 
-/* Новые стили для кнопок */
 .header .button {
-    margin-left: 10px; /* Добавляем отступ между кнопками */
+    margin-left: 10px;
 }
 
 .header .button-container {
     display: flex;
-    align-items: center; /* Выравниваем по вертикали */
+    align-items: right;
+}
+
+.right-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.right-menu li {
+    margin-left: 20px;
+}
+
+.login-button:hover {
+    background-color: #c2a74d;
+    color: white;
+}
+
+.register-button:hover {
+    background-color: #ba0000;
+    color: white;
 }

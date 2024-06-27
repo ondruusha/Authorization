@@ -16,12 +16,13 @@ function authenticateUser(login, password) {
     var storedPassword = localStorage.getItem(login);
     // Проверяем, совпадает ли введенный пароль с сохраненным
     if (storedPassword === password) {
-        alert('Авторизация прошла успешно!');
-        console.log('Авторизация прошла успешно!')
-        window.location.href = 'https://sdo.ket44.ru';
+        if (login === 'admin') {
+            window.location.href = 'admin.html';
+        } else {
+            window.location.href = 'user.html';
+        }
     } else {
-        alert('Ошибка авторизации!');
-        return false;
+        alert('Неверные учетные данные');
     }
 }
 

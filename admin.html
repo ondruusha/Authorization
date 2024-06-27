@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Административная панель</title>
+</head>
+<body>
+    <h1>Административная панель</h1>
+    <form id="adminForm">
+        <label for="carModel">Модель:</label>
+        <input type="text" id="carModel" required>
+        <label for="carPrice">Цена:</label>
+        <input type="number" id="carPrice" required>
+        <button type="submit">Сохранить</button>
+    </form>
+    <script>
+        document.getElementById('adminForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const carModel = document.getElementById('carModel').value;
+            const carPrice = document.getElementById('carPrice').value;
+
+            // Сохранение данных в localStorage
+            const carData = { model: carModel, price: carPrice };
+            localStorage.setItem('carData', JSON.stringify(carData));
+            alert('Данные сохранены');
+        });
+    </script>
+</body>
+</html>
