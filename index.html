@@ -1,31 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пользовательский вход</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Конфигурация автомобиля</title>
 </head>
-
 <body>
-    <h2 align="center" style="color:Black">Регистрация</h2>
-    <form id="registrationForm">
-        <label for="regLogin">Логин:</label><br>
-        <input type="text" id="regLogin" name="regLogin" required><br>
-        <label for="regPassword">Пароль:</label><br>
-        <input type="password" id="regPassword" name="regPassword" required><br> <br>
-        <input type="submit" value="Зарегистрироваться">
-    </form>
-    <h2 align="center" style="color:Black">Авторизация</h2>
-    <form id="loginForm">
-        <label for="login">Логин:</label><br>
-        <input type="text" id="login" name="login" required><br>
-        <label for="password">Пароль:</label><br>
-        <input type="password" id="password" name="password" required><br> <br>
-        <input type="submit" value="Войти">
-    </form>
-    <script src="\data.js"></script>
-</body>
+    <div class="container">
+        <h1>Конфигурация автомобиля</h1>
+        <form id="carConfigForm">
+            <div class="form-group">
+                <label for="engine">Двигатель:</label>
+                <select id="engine" name="engine">
+                    <option value="PetrolEngine">Бензиновый двигатель (150 л.с.)</option>
+                    <option value="DieselEngine">Дизельный двигатель (180 л.с.)</option>
+                    <option value="ElectricEngine">Электрический двигатель (200 л.с.)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transmission">Коробка передач:</label>
+                <select id="transmission" name="transmission">
+                    <option value="ManualTransmission">Ручная коробка передач</option>
+                    <option value="AutomaticTransmission">Автоматическая коробка передач</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="audioSystem">Акустическая система:</label>
+                <select id="audioSystem" name="audioSystem">
+                    <option value="BasicAudioSystem">Базовая акустика (4 динамика)</option>
+                    <option value="PremiumAudioSystem">Премиум акустика (12 динамиков)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="climateControl">Климат-контроль:</label>
+                <select id="climateControl" name="climateControl">
+                    <option value="BasicClimateControl">Базовый климат-контроль (1 зона)</option>
+                    <option value="AdvancedClimateControl">Продвинутый климат-контроль (4 зоны)</option>
+                </select>
+            </div>
+            <button type="button" id="createCarButton">Создать автомобиль</button>
+        </form>
 
+        <div class="result">
+            <h2>Список созданных автомобилей</h2>
+            <div class="car-list" id="carList">
+                <!--созданные автомобили-->
+            </div>
+        </div>
+    </div>
+    <script src="carConfig.js"></script>
+</body>
 </html>
